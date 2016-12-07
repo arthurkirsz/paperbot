@@ -5,7 +5,7 @@ Accounts.onCreateUser((options, user) => {
   const newUser = user;
 
   if (profile) {
-    profile.notifications = { productUpdates: true, productAvailability: true };
+    profile.notifications = { agencyOffer: true };
     newUser.profile = profile;
   }
 

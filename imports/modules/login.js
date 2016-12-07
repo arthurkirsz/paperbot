@@ -15,8 +15,8 @@ const login = () => {
     if (error) {
       Bert.alert(error.reason, 'warning');
     } else {
-      Bert.alert('Logged in!', 'success');
-      browserHistory.push('/notifications');
+      // Bert.alert('Logged in!', 'success');
+      browserHistory.push('/');
     }
   });
 };

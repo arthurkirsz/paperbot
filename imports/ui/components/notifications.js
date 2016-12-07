@@ -23,20 +23,16 @@ export class Notifications extends React.Component {
     const { notifications } = this.props;
 
     return [{
-      id: 'productUpdates',
-      label: 'When product updates occur',
-      value: notifications.productUpdates,
-    }, {
-      id: 'productAvailability',
-      label: 'When the product\'s availability changes',
-      value: notifications.productAvailability,
+      id: 'agencyOffer',
+      label: 'Recevoir les propositions d\'agences proches de chez moi',
+      value: notifications.agencyOffer,
     }];
   }
 
   render() {
     return (<div className="Notifications">
       <Panel
-        header="Email Notifications"
+        header="Préférences de notifications"
       >
         <form ref="notifications">
           <Table bordered className="borderless">
@@ -47,8 +43,8 @@ export class Notifications extends React.Component {
                   <ToggleSwitch
                     id={ id }
                     toggled={ value }
-                    onLabel="Yes"
-                    offLabel="No"
+                    onLabel="Oui"
+                    offLabel="Non"
                     onToggle={ this.handleNotificationPreferenceUpdate }
                   />
                 </td>
