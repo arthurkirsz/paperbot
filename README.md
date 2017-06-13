@@ -13,3 +13,5 @@ A starting point to manage administrative fatigue
     </tr>
   </tbody>
 </table>
+
+Extending the boilerplate from https://github.com/themeteorchef/base 
